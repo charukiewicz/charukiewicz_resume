@@ -25,9 +25,10 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
 
 \name{Christian Charukiewicz} % Your name
-\address{630.464.7644 $|$ c.charukiewicz@gmail.com} % Your phone number and email
+\address{630.464.7644 $|$ c.charukiewicz@gmail.com $|$ \url{https://charukiewi.cz}} % Your phone number and email
 
 \begin{document}
 
@@ -36,7 +37,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-{\bf University of Illinois, Urbana-Champaign} \hfill { \textsc{Dec 2014}} \\ 
+{\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{Dec 2014}} \\ 
 B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \end{rSection}
 
@@ -47,6 +48,8 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \begin{rSection}{Experience}
 \begin{rSubsection}{Roompact}{\textsc{Jan 2015 - Present}}{Software Engineer}{}
 \item Designed, built, tested, deployed, and maintained sophisticated application features using various web technologies
+\item Examples include a \textbf{websocket based news feed} for real-time communication, a \textbf{statistics system} for usage analysis, a \textbf{worker/queue system} for mass email/text messages, a \textbf{caching system} for dynamic data, a \textbf{single sign-on system} for external authentication servers, a \textbf{RESTful API} for third party integration
+\item Managed over half a dozen virtual Linux servers, configured firewalls, implemented backup processes, etc.
 \item Technologies used included Linux, CakePHP, Node.js, MySQL, Redis, JavaScript, jQuery, AJAX, Websockets, HTML5, CSS3, Supervisor
 \end{rSubsection}
 
@@ -64,15 +67,13 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \begin{rSubsection}{Illini Emergency Medical Services}{\textsc{Sept 2012 - May 2014}}{EMT-Basic (Volunteer Position)}{}
 \item Worked with and led teams of EMS providers at designated events
 \item Provided pre-hospital basic life support to patients
-\item Coordinated with other agencies (Police, Fire, EMS) to ensure coverage of large events
-\item Licensure: NREMT - EMT, IDPH - EMT-Basic, AHA - CPR
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{Oct 2012 - Nov 2013}}{Director of Community Experience}{}
-\item Planned and assigned projects, held development meetings, wrote technical specifications, analyzed user data and trends, determined project costs, analyzed sales, developed marketing strategies, developed new software features and digital sales opportunities
-\item Designed and implemented a system which automated and expanded all product sales; removed sales overhead costs and released multiple new categories of products which increased average monthly revenue of the company by 35\%
+\item Managed development team consisting of multiple developers working on developing features for small game server with over \textbf{8,000 players} a month
+\item Designed and implemented a system which automated and expanded all product sales; removed sales overhead costs and released multiple new varietys of digital products which increased average monthly revenue from approximately \textbf{\$9,000} to \textbf{\$15,000} a month 
 \item Worked with the PAWN language, MySQL, and PHP
 \end{rSubsection}
 
@@ -84,8 +85,8 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 
 \begin{rSection}{Technical Skills \& Languages}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
-Programming Languages & Python, PHP, Javascript, BASH, C++, Java, Ocaml, PAWN \\
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l}
+Programming Languages & Python, PHP, Javascript, BASH, C++, Java, Ocaml, Haskell \\
 Operating Systems & Linux, Windows, OSX, Android, ChromeOS \\
 Databases \& Statistical Tools & MySQL, Microsoft Excel, Numpy/Scipy/Matplotlib (Python) \\
 Tools \& Software & git, svn, ssh, s/ftp, vim, dstat, grep, supervisord, cron \\
