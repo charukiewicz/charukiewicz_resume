@@ -25,31 +25,27 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage{hyperref}
 
 \name{Christian Charukiewicz} % Your name
-\address{630.464.7644 $|$ c.charukiewicz@gmail.com $|$ \url{https://charukiewi.cz}} % Your phone number and email
+\address{630.464.7644 $|$ c.charukiewicz@gmail.com $|$ https://charukiewi.cz} % Your phone number and email
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-{\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{Dec 2014}} \\ 
-B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-\begin{rSubsection}{Roompact}{\textsc{Jan 2015 - Present}}{Software Engineer}{}
+\begin{rSubsection}{Roompact}{\textsc{Jan 2016 - Present}}{Chief Technology Officer}{}
+\item Created long term goals and underlying strategy for product development, improving software development processes, and development team growth
+\item Designed, built, and maintained application features using a wide array of technologies
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Roompact}{\textsc{Jan 2015 - Jan 2016}}{Software Engineer}{}
 \item Designed, built, tested, deployed, and maintained sophisticated application features using various web technologies
-\item Examples include a \textbf{websocket based news feed} for near real-time communication, a \textbf{statistics system} for usage analysis, a \textbf{worker/queue system} for mass email/text messages, a \textbf{caching system} for dynamic data, a \textbf{single sign-on system} for external authentication servers, a \textbf{RESTful API} for third party integration
-\item Managed over half a dozen virtual Linux servers, configured firewalls, installed server daemons, wrote BASH scripts and cronjobs for backup processes, etc.
+\item Managed over half a dozen virtual Linux servers, configured firewalls, installed server daemons, wrote Bash scripts and cronjobs for backup processes, etc.
 \item Technologies used included Linux, CakePHP, Node.js, MySQL, Redis, JavaScript, jQuery, AJAX, Websockets, HTML5, CSS3, Supervisor
 \end{rSubsection}
 
@@ -57,9 +53,8 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 
 \begin{rSubsection}{Roompact}{\textsc{May 2014 - Aug 2014}}{Software Development Intern}{}
 \item Built application features with CakePHP, MySQL backend and HTML5, JQuery, AJAX frontend
-\item Configured and maintained Linux servers; automated server tasks through BASH and cronjobs
+\item Configured and maintained Linux servers; automated server tasks with Bash scripts and cronjobs
 \item Built distributed process notification system with queue server and worker processes
-\item Developed and implemented data mining algorithms to collect user data for subsequent analysis
 \end{rSubsection}
 
 %------------------------------------------------
@@ -73,10 +68,19 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 
 \begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{Oct 2012 - Nov 2013}}{Director of Community Experience}{}
 \item Managed development team consisting of multiple developers working on developing features for small game server with over \textbf{8,000 players} a month
-\item Designed and implemented a system which automated and expanded all product sales; removed sales overhead costs and released multiple new varietys of digital products which increased average monthly revenue from approximately \textbf{\$9,000} to \textbf{\$15,000} a month 
+\item Designed and built an automated sales system which increased average monthly revenue by \textbf{\%35}
 \item Worked with the PAWN language, MySQL, and PHP
 \end{rSubsection}
 
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{Dec 2014}} \\ 
+B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -86,10 +90,10 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \begin{rSection}{Technical Skills \& Languages}
 
 \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l}
-Programming Languages & Python, PHP, Javascript, BASH, C++, Java, Ocaml, Haskell \\
-Operating Systems & Linux, Windows, OSX, Android, ChromeOS \\
-Databases \& Statistical Tools & MySQL, Microsoft Excel, Numpy/Scipy/Matplotlib (Python) \\
-Tools \& Software & git, svn, ssh, s/ftp, vim, dstat, grep, supervisord, cron \\
+Programming Languages & Python, PHP, JavaScript, Bash, C++, Java, Ocaml, Haskell \\
+Operating Systems & Linux, Android, ChromeOS \\
+Databases \& Statistical Tools & MySQL, Redis, Numpy/Scipy/Matplotlib (Python) \\
+Tools \& Software & Git, Svn, SSH, Vim, grep, Bash, Supervisor, cron \\
 Spoken Languages & English (native proficiency), Polish (bilingual proficiency)
 \end{tabular}
 
