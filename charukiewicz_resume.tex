@@ -25,6 +25,11 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{fancyhdr}
+
+\thispagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
 
 \name{Christian Charukiewicz} % Your name
 \address{630.464.7644 $|$ c.charukiewicz@gmail.com $|$ https://charukiewi.cz} % Your phone number and email
@@ -37,8 +42,10 @@
 
 \begin{rSection}{Experience}
 \begin{rSubsection}{Roompact}{\textsc{Jan 2016 - Present}}{Chief Technology Officer}{}
-\item Created long term goals and underlying strategy for product development, improving software development processes, and development team growth
-\item Designed, built, and maintained application features using a wide array of technologies
+\item Set long term goals for product development; elevated standards for application design, architecture, documentation, performance, security
+\item Designed and built web applications using a variety of programming languages and frameworks
+\item Reduced company infrastructure costs by 70\% by transitioning technical infrastructure to AWS
+\item Led hiring process for technical employees and interns; led the training of technical employees
 \end{rSubsection}
 
 %------------------------------------------------
@@ -54,7 +61,6 @@
 \begin{rSubsection}{Roompact}{\textsc{May 2014 - Aug 2014}}{Software Development Intern}{}
 \item Built application features with CakePHP, MySQL backend and HTML5, JQuery, AJAX frontend
 \item Configured and maintained Linux servers; automated server tasks with Bash scripts and cronjobs
-\item Built distributed process notification system with queue server and worker processes
 \end{rSubsection}
 
 %------------------------------------------------
@@ -67,8 +73,8 @@
 %------------------------------------------------
 
 \begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{Oct 2012 - Nov 2013}}{Director of Community Experience}{}
-\item Managed development team consisting of multiple developers working on developing features for small game server with over \textbf{8,000 players} a month
-\item Designed and built an automated sales system which increased average monthly revenue by \textbf{\%35}
+\item Managed development team consisting of multiple developers working on developing features for small game server with over 8,000 players a month
+\item Designed and built an automated sales system which increased average monthly revenue by 35\%
 \item Worked with the PAWN language, MySQL, and PHP
 \end{rSubsection}
 
@@ -90,14 +96,16 @@ B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
 \begin{rSection}{Technical Skills \& Languages}
 
 \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l}
-Programming Languages & Python, PHP, JavaScript, Bash, C++, Java, Ocaml, Haskell \\
+Programming Languages & Python, PHP, JavaScript, Bash, Haskell, Elm \\
 Operating Systems & Linux, Android, ChromeOS \\
 Databases \& Statistical Tools & MySQL, Redis, Numpy/Scipy/Matplotlib (Python) \\
-Tools \& Software & Git, Svn, SSH, Vim, grep, Bash, Supervisor, cron \\
-Spoken Languages & English (native proficiency), Polish (bilingual proficiency)
+Tools \& Software & Git, Awk, Crontab, Ansible, Vim, Nginx, Supervisor \\
+Spoken Languages (Native Proficiency) & English, Polish
 \end{tabular}
 
 \end{rSection}
+
+\cfoot{\footnotesize{\textsc{February 2017}}}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
