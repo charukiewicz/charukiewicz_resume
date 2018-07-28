@@ -26,13 +26,24 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    linkcolor=none,
+    filecolor=none,      
+    urlcolor=none,
+}
 
 \thispagestyle{fancy}
 \fancyhf{} % sets both header and footer to nothing
 \renewcommand{\headrulewidth}{0pt}
 
 \name{Christian Charukiewicz} % Your name
-\address{630.464.7644 $|$ c.charukiewicz@gmail.com $|$ https://charukiewi.cz} % Your phone number and email
+\address
+    {630.464.7644
+    $|$ \href{mailto:c.charukiewicz@gmail.com}{c.charukiewicz@gmail.com}
+    $|$ \href{https://charukiewi.cz/}{https://charukiewi.cz}
+    } % Your phone number and email
 
 \begin{document}
 
@@ -41,28 +52,30 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-\begin{rSubsection}{Roompact}{\textsc{2014 - Present}}{Chief Technology Officer}{}
+\begin{rSubsection}{Roompact}{\textsc{2014 -- Present}}{Chief Technology Officer}{}
 \item Set long term road map for product development; continually raised standards for application design, architecture, documentation, performance, security
 \item Led hiring process for technical employees and interns; developed and led training of new technical staff
 \item Chief architect of new features, functionality, and underlying infrastructure; led team members in making design decisions ranging from database schemas,  to user interfaces, to application-specific REST APIs
 \item Designed and built web applications using a variety of programming languages and frameworks
-\item Introduced the Elm programming language as the primary front end language for new features; taught Elm and functional programming concepts to technical team members with no previous FP experience
-\item Planned and executed the transition of company server infrastructure to Amazon Web Services; reduced technical infrastructure costs by 70\%
-\item Employed a variety of AWS tools and services, including EC2, ELBs, S3, SES, Route 53, Lambda, CloudWatch, CloudFront, etc.
-\item Achieved completely automated Linux server deployments with Bash and Ansible
+\item Introduced the \textbf{Haskell} and \textbf{Elm} programming languages as the foundation for new development
+\item Taught functional programming concepts to technical team members with no previous FP experience
+\item Planned and executed the transition of company server infrastructure to Amazon Web Services; \textbf{reduced technical infrastructure costs by 70\%}
+\item Employed a variety of \textbf{AWS} tools and services, including EC2, ELBs, S3, SES, Route 53, Lambda, CloudWatch, CloudFront, IAM, Inspector, etc.
+\item Utilized a variety of programming languages, tools, and frameworks: Haskell, Elm, JavaScript, CakePHP, Jekyll, HTML, SASS/SCSS, Node.js, Nginx, MySQL, Redis, Supervisor
+\item Achieved \textbf{completely automated Linux server deployments} with Bash and Ansible
 \item Facilitated and supported professional development of technical team members; assisted in development of key skills and long term goals; provided guidance in learning specific topics
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Illini Emergency Medical Services}{\textsc{2012 - 2014}}{EMT-Basic (Volunteer Position)}{}
+\begin{rSubsection}{Illini Emergency Medical Services}{\textsc{2012 -- 2014}}{EMT-Basic (Volunteer Position)}{}
 \item Worked with and led teams of EMS providers at designated events
 \item Provided pre-hospital basic life support to patients
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{2012 - 2013}}{Director of Community Experience}{}
+\begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{2012 -- 2013}}{Director of Community Experience}{}
 \item Managed development team consisting of multiple developers working on developing features for small game server with over 8,000 players a month
 \item Designed and built an automated sales system which increased average monthly revenue by 35\%
 \item Worked with the PAWN language, MySQL, and PHP
@@ -75,8 +88,8 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-{\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{Dec 2014}} \\ 
-B.Sc. Mathematics \& Computer Science, Philosophy (Double Major)
+{\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{2010 -- 2014}} \\ 
+B.Sc. Mathematics \& Computer Science, Philosophy
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -95,7 +108,7 @@ Spoken Languages (Native Proficiency) & English, Polish
 
 \end{rSection}
 
-\cfoot{\footnotesize{\textsc{Updated: February 2018}}}
+\cfoot{\footnotesize{\textsc{Revision: July 2018}}}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
