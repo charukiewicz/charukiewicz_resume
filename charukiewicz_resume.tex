@@ -30,7 +30,7 @@
 \hypersetup{
     colorlinks=false,
     linkcolor=none,
-    filecolor=none,      
+    filecolor=none,
     urlcolor=none,
 }
 
@@ -40,7 +40,7 @@
 
 \name{Christian Charukiewicz} % Your name
 \address
-    {630.464.7644
+    {\href{tel:+16304647644}{630.464.7644}
     $|$ \href{mailto:c.charukiewicz@gmail.com}{c.charukiewicz@gmail.com}
     $|$ \href{https://charukiewi.cz/}{https://charukiewi.cz}
     } % Your phone number and email
@@ -51,37 +51,76 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
-\begin{rSubsection}{Roompact}{\textsc{2014 -- Present}}{Chief Technology Officer}{}
+\begin{rSection}{Professional Experience}
+\begin{rSubsection}{Chief Technology Officer}{2014 -- Present}{Roompact}{}
 \item Set long term road map for product development; continually raised standards for application design, architecture, documentation, performance, security
 \item Led hiring process for technical employees and interns; developed and led training of new technical staff
 \item Chief architect of new features, functionality, and underlying infrastructure; led team members in making design decisions ranging from database schemas,  to user interfaces, to application-specific REST APIs
-\item Designed and built web applications using a variety of programming languages and frameworks
-\item Introduced the \textbf{Haskell} and \textbf{Elm} programming languages as the foundation for new development
-\item Taught functional programming concepts to technical team members with no previous FP experience
-\item Planned and executed the transition of company server infrastructure to Amazon Web Services; \textbf{reduced technical infrastructure costs by 70\%}
-\item Employed a variety of \textbf{AWS} tools and services, including EC2, ELBs, S3, SES, Route 53, Lambda, CloudWatch, CloudFront, IAM, Inspector, etc.
-\item Utilized a variety of programming languages, tools, and frameworks: Haskell, Elm, JavaScript, CakePHP, Jekyll, HTML, SASS/SCSS, Node.js, Nginx, MySQL, Redis, Supervisor
-\item Achieved \textbf{completely automated Linux server deployments} with Bash and Ansible
-\item Facilitated and supported professional development of technical team members; assisted in development of key skills and long term goals; provided guidance in learning specific topics
+\item Introduced the Haskell and Elm programming languages as the foundation for new development; taught Haskell, Elm, and functional programming concepts to technical team members with no previous FP experience
+\item Planned and executed the transition of company server infrastructure to Amazon Web Services; reduced technical infrastructure costs by 70\%
+\item Employed a variety of AWS tools and services, including EC2, RDS, S3, ELBs, SES, Route 53, Lambda, CloudWatch, CloudFront, IAM, Inspector, etc.
+\item Achieved completely automated and reproducible Linux server deployments and configuration management with Bash, Ansible, and Nix
+\item Utilized and taught team members on the use of a variety of programming languages, infrastructure tools, and frameworks: Haskell, Elm, JavaScript, CakePHP, Node.js, Jekyll, HTML, SASS/SCSS, Nginx, MySQL, Redis, Supervisor, Ansible, Nix
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Illini Emergency Medical Services}{\textsc{2012 -- 2014}}{EMT-Basic (Volunteer Position)}{}
+\begin{rSubsection}{EMT-Basic (Volunteer Position)}{2012 -- 2014}{Illini Emergency Medical Services}{}
 \item Worked with and led teams of EMS providers at designated events
 \item Provided pre-hospital basic life support to patients
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Next Generation Gaming, LLC}{\textsc{2012 -- 2013}}{Director of Community Experience}{}
+\begin{rSubsection}{Director of Community Experience}{2012 -- 2013}{Next Generation Gaming, LLC}{}
 \item Managed development team consisting of multiple developers working on developing features for small game server with over 8,000 players a month
 \item Designed and built an automated sales system which increased average monthly revenue by 35\%
 \item Worked with the PAWN language, MySQL, and PHP
 \end{rSubsection}
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OSS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Open Source Software}
+
+\begin{rListSection}
+\item \textbf{\texttt{isbn}} {\em (Author)} -- \href{https://hackage.haskell.org/package/isbn}{hackage.haskell.org/package/isbn}, \href{https://github.com/charukiewicz/hs-isbn}{github.com/charukiewicz/hs-isbn}
+    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
+    \item[-] Authored the \texttt{isbn} Haskell library, which enables validating and manipulating ISBNs.
+    \item[-] Wrote detailed documentation, use-case examples, and automated tests.
+    \end{itemize}
+\item \textbf{\texttt{yesod-auth}} {\em (Contributor)} -- \href{https://hackage.haskell.org/package/yesod-auth}{hackage.haskell.org/package/yesod-auth}
+    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
+    \item[-] Made improvements to the \texttt{yesod-auth} Haskell package, enhancing the developer-facing API to enable more control over email-based user registration and password reset workflows
+    \end{itemize}
+\item \textbf{\texttt{esqueleto}} {\em (Contributor)} -- \href{https://hackage.haskell.org/package/esqueleto}{hackage.haskell.org/package/esqueleto}
+    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
+    \item[-] Ported elements of standard SQL into the \texttt{esqueleto} Haskell package, improving its coverage of SQL
+    \item[-] Wrote detailed documentation and examples for an experimental new syntax in the package, demonstrating usage of new package features and explaining design decisions
+    \end{itemize}
+\end{rListSection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills \& Languages}
+
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{2ex}} l}
+Languages
+    & Haskell, Elm, PHP, JavaScript, SQL, Python, Bash, HTML, SCSS \\
+Technologies
+    & Linux, Nix, Redis, Nginx, Ansible, Node.js, MySQL, PostgreSQL, SQLite, Git, AWS \\
+\end{tabular}
+
+\end{rSection}
+
+\cfoot{\footnotesize{\textsc{Revision: May 2020}}}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -91,24 +130,6 @@
 {\bf University of Illinois, Urbana-Champaign} \hfill {\textsc{2010 -- 2014}} \\ 
 B.Sc. Mathematics \& Computer Science, Philosophy
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Skills \& Languages}
-
-\begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l}
-Programming Languages & Python, PHP, JavaScript, Bash, Haskell, Elm \\
-Operating Systems & Linux, Android, ChromeOS \\
-Databases \& Statistical Tools & MySQL, Redis, Numpy/Scipy/Matplotlib (Python) \\
-Tools \& Software & Git, Awk, Crontab, Ansible, Vim, Nginx, Supervisor \\
-Spoken Languages (Native Proficiency) & English, Polish
-\end{tabular}
-
-\end{rSection}
-
-\cfoot{\footnotesize{\textsc{Revision: July 2018}}}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
