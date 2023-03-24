@@ -24,6 +24,10 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\def\plus{\texttt{+}}
+\def\minus{\texttt{-}}
+\def\hash{\texttt{\#}}
+
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{fancyhdr}
 \usepackage{hyperref}
@@ -54,30 +58,28 @@
 \begin{rSection}{Professional Experience}
 
 \begin{rSubsection}{Partner \& Principal Software Engineer}{Oct 2020 -- Present}{Foxhound Systems}{}
+\item Co-founding partner; acquired clients, set growth strategy, and managed staff to provide software engineering and technical services to client companies with engagements spanning from 3 months to 2{\plus} years
+  \item Successfully managed a team of software engineers, both in-house and embedded in client teams, by assigning tasks, conducting thorough reviews of work output, and providing constructive feedback and mentorship for career growth
+  \item Collaborated closely with product managers and executives at client companies to identify and solve problems, and gather and refine requirements for optimal results
   \item Led the design, build, and delivery of full stack web applications and back end systems for clients in a variety of industries including ecommerce, video streaming, financial services, and developer tools
-  \item Managed software engineers (both in-house and when embeddded in client teams); delegated tasks, reviewed work output and provided constructive feedback, and provided mentorship and career guidance
-  \item Worked with product managers \& executives at client companies in problem discovery, requirements gathering
-  \item Created software systems using numerous tools and technologies, including Haskell, Node.js, React, Python, PHP, Ruby, Tailwind, MySQL, PostgreSQL
-  \item Deployed and maintained client software systems on a variety of platforms, including AWS and Heroku using numerous infrastructure/build tools, such as Docker, Nix, GitHub Actions, BitBucket Pipelines, AWS ECR/ECS/RDS, CloudWatch, Sentry
-  \item Co-founding partner; acquired clients, set growth strategy, provided services growing from \$0 to \$500K AR
+  \item Utilized a broad range of cutting-edge tools and technologies, including Haskell, Node.js, React, TypeScript, Python, PHP (Laravel), Ruby on Rails, Tailwind, MySQL, and PostgreSQL, to create fast and reliable software
+  \item Deployed and maintained client software systems on a variety of platforms, including AWS and Heroku using numerous infrastructure tools, such as Docker, Nix, GitHub Actions, BitBucket Pipelines, Sentry
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Chief Technology Officer}{May 2014 -- Oct 2020}{Roompact}{}
-  \item Leader of technology and product driving B2B SaaS revenue growth from \$150K to \$1MM ARR
+\item Promoted to engineering team lead within a of year getting hired as second software engineer at startup; expanded technology and product driving B2B SaaS revenue growth from \$150K to \$1MM ARR
+  \item Successfully grew engineering team from 0 to 5 people; led hiring process for technical employees and interns; developed and led training of new technical staff
   \item Set long term road map for product development; continually raised standards for application design, architecture, documentation, performance, security
-  \item Led hiring process for technical employees and interns; developed and led training of new technical staff
-  \item Introduced and taught the Haskell and Elm programming languages to team members
   \item Planned and executed the transition of company server infrastructure to Amazon Web Services; automated server deployments; reduced technical infrastructure costs by 70\%
-  \item Utilized and taught team members on the use of a variety of programming languages, infrastructure tools, and frameworks: Haskell, Elm, JavaScript, CakePHP, Node.js, Jekyll, HTML, SASS/SCSS, Nginx, MySQL, Redis, Supervisor, Ansible, Nix, AWS (EC2, RDS, S3, ELBs, SES, Route 53, Lambda, etc.)
-  \item Previous roles: Software Engineer (Oct 2014 - Jan 2016), Software Engineering Intern (May 2014 - Aug 2014)
+  \item Utilized and taught team members on the use of a variety of programming languages, infrastructure tools, and frameworks such as Haskell, Elm, JavaScript, PHP, Node.js, MySQL, Redis, Nix, AWS, etc.
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Product Development Lead}{Oct 2011 -- Nov 2013}{Next Generation Gaming}{}
-  \item Managed development team consisting of multiple developers working on developing features for small game server with over 8,000 players a month; technologies used: PAWN, MySQL, PHP
+  \item Managed team consisting of multiple developers and QA testers working on developing features for small game server with over 8,000 players a month; technologies used: MySQL, PHP
   \item Designed and built an automated sales system which increased average monthly revenue by 35\%
 \end{rSubsection}
 
@@ -89,10 +91,11 @@
 
 \begin{rSection}{Technical Skills \& Languages}
 
-\begin{tabular}{@{} >{}l @{\hspace{2ex}} l}
-    Haskell, Elm, PHP, JavaScript, Python, Ruby, Node.js, Bash, HTML, SCSS, Linux, Docker, Nix, Redis, \\
-    Ruby on Rails, React.js, Laravel, Nginx, Apache, Ansible, MySQL, PostgreSQL, SQLite, Git, AWS, Heroku \\
-\end{tabular}
+\begin{rListSection}
+\item \textbf{Languages}: Haskell, Elm, PHP, TypeScript, JavaScript, Python, Ruby, Node.js, Bash, HTML, SCSS, SQL
+\item \textbf{Technologies}:  Ruby on Rails, React.js, Laravel, Nginx, Apache, Ansible, MySQL, PostgreSQL, SQLite, Git, AWS (EC2, S3, RDS, Lambda, ECS, SES, etc.), Heroku, Linux, Docker, Nix, Redis, Balsamiq, Figma
+\item \textbf{Concepts}: Full stack web development, product management, functional programming, object-oriented programming, UI/UX design, database \& infrastructure management, CI/CD, microservices, performance
+\end{rListSection}
 
 \end{rSection}
 
@@ -113,18 +116,8 @@ B.Sc. Mathematics \& Computer Science, Philosophy
 
 \begin{rListSection}
 \item \textbf{\texttt{isbn}} {\em (Haskell package, Author)} -- \href{https://hackage.haskell.org/package/isbn}{hackage.haskell.org/package/isbn}, \href{https://github.com/charukiewicz/hs-isbn}{github.com/charukiewicz/hs-isbn}
-    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
-            \item[-] Authored Haskell library ISBN validation \& manipulation; wrote documentation, automated tests
-    \end{itemize}
 \item \textbf{\texttt{yesod-auth}} {\em (Haskell package, Contributor)} -- \href{https://hackage.haskell.org/package/yesod-auth}{hackage.haskell.org/package/yesod-auth}
-    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
-    \item[-] Enhanced the developer-facing API for email-based user registration and password reset workflows
-    \end{itemize}
 \item \textbf{\texttt{esqueleto}} {\em (Haskell package, Contributor)} -- \href{https://hackage.haskell.org/package/esqueleto}{hackage.haskell.org/package/esqueleto}
-    \begin{itemize} \itemsep -0.5em \vspace{-0.5em}
-    \item[-] Ported elements of standard SQL into the package, improving its coverage of SQL
-    \item[-] Wrote detailed documentation and examples for an experimental new syntax in the package
-    \end{itemize}
 \end{rListSection}
 
 \end{rSection}
