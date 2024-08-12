@@ -25,6 +25,7 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{mathabx}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -108,11 +109,11 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  \MakeUppercase{#1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{$\labelitemi$}{ % List for each individual item in the section
-      \setlength{\leftmargin=1.5em \rightmargin=0em} % Margin within the section
+      \setlength{\leftmargin=0em \rightmargin=0em} % Margin within the section
   }
   \item[]
 }{
@@ -125,7 +126,9 @@
 
 \newenvironment{rListSection}[0]{ % 1 input section name
   \sectionskip
-  \begin{list}{$\bullet$}{\leftmargin=1.0em \rightmargin=1.0em} % \cdot used for bullets, no indentation
+  \begin{list}{$\sqbullet$}{
+          \leftmargin=1.5em \rightmargin=0.5em
+  } % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -137,13 +140,14 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {\textsc{#2}} % Bold company name and date on the right
+ {\bf{#1}} \hfill {\textsc{#2}} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\bullet$}{\leftmargin=1.0em \rightmargin=0.5em} % \bullet used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  \begin{list}{$\sqbullet$}{\leftmargin=1.5em \rightmargin=0.5em} % \bullet used for bullets, no indentation
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+    \setlength{\leftmargin=1em \rightmargin=1em} % Margin within the section
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
